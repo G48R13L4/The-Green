@@ -1,0 +1,241 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+navbar {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo h4 {
+  color: #827e7e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  display: flex;
+}
+.logo image {
+  margin-left: 8px;
+  justify-content: space-between;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.navbar .nav-links li {
+  list-style: none;
+}
+.navbar .nav-links a {
+  color: #827e7e;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  z-index: 5;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #827e7e;
+  margin: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #deefdd;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .burger {
+    display: block;
+    z-index: 5;
+  }
+  .cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px #e7e7e4); /*Sombra na img*/
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.presentation {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  min-height: 90vh;
+  align-items: center;
+}
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(to right, #4f6c57, #acc9b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #827e7e;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+.cta-select {
+  border: 1.5px solid #4f6c57;
+  background-color: transparent;
+  color: #4f6c57;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 30px 0px 0px 30px;
+}
+.cta-add {
+  border: none;
+  background-color: #4f6c57;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  margin: 30px 0px 0px 30px;
+}
+.cover {
+  flex: 1;
+}
+.cover img {
+  height: 60vh;
+  filter: drop-shadow(0px 5px 3px #e7e7e4); /*Sombra na img*/
+}
+
+.section-title {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.section-title:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #777645;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.font-weight-bold {
+  padding-top: 30px;
+  font-weight: 700 !important;
+}
+.carousel {
+  margin-top: 50px;
+}
+
+.carousel .btn-floating {
+  color: #777645;
+}
+.carousel-item {
+  flex: 1;
+}
+.btn-primari {
+  margin-left: 40px;
+  color: #fff;
+  border-radius: 0.9rem;
+  border: 1.5px solid #777645;
+  background-color: #777645;
+  border-color: #777645;
+}
+.fa-carrot {
+  color: #d1d093;
+}
+.theme-light {
+  background-color: #fafafc;
+  padding: 30px;
+}
+.card {
+  filter: drop-shadow(0px 5px 3px #cecdbb);
+}
+.depo {
+  color: #827e7e;
+  margin-bottom: 20px;
+}
+.wrap {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wrap txt {
+  color: #777645;
+}
+.btn-primari:hover {
+  color: #fff;
+  background-color: #d1d093;
+  border-color: #d1d093;
+}
+
+.icons {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #4f6c57;
+}
